@@ -1,0 +1,8 @@
+.heroContainer{
+    background-image: url('../../images/Background\ 1.jpg');
+    position: absolute;
+    width: 1440px;
+    height: 646px;
+    left: 0px;
+    top: -2px;
+}
