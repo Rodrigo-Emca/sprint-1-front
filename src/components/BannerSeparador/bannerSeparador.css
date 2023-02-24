@@ -1,16 +1,18 @@
 .bannerSeparador{
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 35vh;
   }
   
   .contenedorNaranja{
     /* position: absolute; */
-    width: 90%;
-  
-    left: calc(50% - 1258px/2);
-    top: calc(50% - 265px/2 + 321.5px);
+    width: 85%;
+    height: fit-content;
+
+    /* left: calc(50% - 1258px/2);
+    top: calc(50% - 265px/2 + 321.5px); */
   
     background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
     border-radius: 6px;
@@ -18,3 +20,15 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (max-width:425px ) {
+    .bannerSeparador{
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .contenedorNaranja{
+        height: 100vh;
+        justify-content: center;
+    }
+}

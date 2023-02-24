@@ -11,7 +11,7 @@ export default function Hero() {
         <NavBar/>
         <Bienvenida></Bienvenida>
       </div>
-      <BannerSeparador></BannerSeparador>
+    <BannerSeparador></BannerSeparador>
     </div>
   )
 }

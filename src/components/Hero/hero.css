@@ -2,10 +2,16 @@
     background-image: url('../../images/Background\ 1.jpg');
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 65vh;
     left: 0px;
     top: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:425px ) {
+    .heroContainer{
+        height: 100vh;
+    }
 }

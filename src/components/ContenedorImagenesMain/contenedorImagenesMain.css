@@ -9,11 +9,24 @@
   
   .image1{
     position: relative;
-    height: 300px;
-    bottom: 2rem;
+    height: 225px;
+    bottom: 1rem;
   }
   
   .onePeaceImg{
     position: relative;
-    bottom: 3rem;
+    height: 200px;
+    bottom: 1rem;
   }
+
+  @media (max-width:425px ) {
+    .image1{
+      position: relative;
+      height: 225px;
+    }
+    
+    .onePeaceImg{
+      position: relative;
+      height: 200px;
+    }
+}
