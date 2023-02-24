@@ -1,9 +1,10 @@
 import React from 'react'
 import './logoMain.css'
 
+import logo from '../../images/logo_dos.svg'
+
 export default function LogoMain() {
-    //let imagen = <img src="../../images/Logo.png"/>
     return (
-            <img className='logoImage' src="../../images/logo_dos.svg"/>
+        <img src={logo} alt="logo" className='logoImage'/>
     )
 }

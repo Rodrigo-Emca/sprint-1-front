@@ -5,6 +5,5 @@
     top: 32px;
     display: flex;
     justify-content: space-between;
-
-    border: solid 2px yellow;
+    align-items: center;
 }
