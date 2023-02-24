@@ -1,30 +1,25 @@
 // import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import Hero from './components/Hero/Hero';
+
+
+import ContenedorTexto from './components/contenedorTexto/ContenedorTexto';
+import ContenedorImagenesMain from './components/ContenedorImagenesMain/ContenedorImagenesMain';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar/>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1>SPRINT 1</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <main>
+      <Hero/>
+      <div className="bannerSeparador">
+        <div className='contenedorNaranja'>
+          <ContenedorImagenesMain></ContenedorImagenesMain>
+          <ContenedorTexto></ContenedorTexto>
+        </div>
 
-      </main>
+      </div>
+      <div className="registerContainer">
 
-      <footer>
-        
-      </footer>
+      </div>
     </div>
   );
 }

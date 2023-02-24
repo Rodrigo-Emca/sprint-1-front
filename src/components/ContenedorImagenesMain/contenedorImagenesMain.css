@@ -1,0 +1,19 @@
+.contenedorImagenes{
+    width: 50%;
+    /* border: blue 2px solid; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .image1{
+    position: relative;
+    height: 300px;
+    bottom: 2rem;
+  }
+  
+  .onePeaceImg{
+    position: relative;
+    bottom: 3rem;
+  }

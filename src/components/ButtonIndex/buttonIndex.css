@@ -1,0 +1,32 @@
+.button-menu{
+    position: absolute;
+    left: 0%;
+    right: 95.47%;
+    top: 0%;
+    bottom: 0%; 
+    display: flex;
+    flex: column; 
+}
+
+.button-logo{
+    position: absolute;
+    left: 84.66%;
+    right: 0%;
+    top: 21.82%;
+    bottom: 1.82%;
+}
+
+.buttonRead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    width: 240px;
+    height: 55px;
+
+    background: #FFFFFF;
+    border-radius: 6px;
+}

@@ -1,3 +1,10 @@
 .navbar-box{
-    background-color: blueviolet;
+    position: absolute;
+    width: 90VW;
+    height: 55px;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+
+    border: solid 2px yellow;
 }
