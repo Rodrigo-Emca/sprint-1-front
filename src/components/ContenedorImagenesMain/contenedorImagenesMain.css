@@ -1,0 +1,32 @@
+.contenedorImagenes{
+    width: 50%;
+    /* border: blue 2px solid; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .image1{
+    position: relative;
+    height: 225px;
+    bottom: 1rem;
+  }
+  
+  .onePeaceImg{
+    position: relative;
+    height: 200px;
+    bottom: 1rem;
+  }
+
+  @media (max-width:425px ) {
+    .image1{
+      position: relative;
+      height: 225px;
+    }
+    
+    .onePeaceImg{
+      position: relative;
+      height: 200px;
+    }
+}

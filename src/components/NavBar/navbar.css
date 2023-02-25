@@ -1,0 +1,9 @@
+.navbar-box{
+    position: absolute;
+    width: 85VW;
+    height: 55px;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
