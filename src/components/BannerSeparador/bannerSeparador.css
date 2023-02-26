@@ -9,7 +9,7 @@
   .contenedorNaranja{
     /* position: absolute; */
     width: 85%;
-    height: fit-content;
+    height: 100%;
 
     /* left: calc(50% - 1258px/2);
     top: calc(50% - 265px/2 + 321.5px); */
