@@ -7,12 +7,8 @@
   }
   
   .contenedorNaranja{
-    /* position: absolute; */
     width: 85%;
     height: 100%;
-
-    /* left: calc(50% - 1258px/2);
-    top: calc(50% - 265px/2 + 321.5px); */
   
     background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
     border-radius: 6px;
@@ -21,14 +17,8 @@
     flex-wrap: wrap;
   }
 
-  @media (max-width:425px ) {
+  @media (max-width:767px ) {
     .bannerSeparador{
-      display: flex;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-    .contenedorNaranja{
-        height: 100vh;
-        justify-content: center;
+      display: none;
     }
 }

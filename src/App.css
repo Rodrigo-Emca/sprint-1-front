@@ -168,3 +168,12 @@ a{
     height: 100vh;
     object-fit: cover;
 }
+
+@media (max-width:767px ) {
+    .Register{
+        width: 100%;
+    }
+    .ImagenRegister{
+        display: none;
+    }
+}
