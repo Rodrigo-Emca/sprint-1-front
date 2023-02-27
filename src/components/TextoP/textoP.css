@@ -137,3 +137,17 @@
         color: #FFFFFF;
     }
 }
+
+/* Formulario Main */
+.pAlredyAccount{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1F1F1F;
+    text-align: center;
+}
+
+.pAlredyAccount>a{
+    color: #F97316;
+}
