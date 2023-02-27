@@ -121,8 +121,6 @@
         color: rgba(255, 255, 255, 0.6);
     }
     .Luffy {
-        /* width: 356px; */
-        /* height: 65px; */
         width: 90%;
         
         font-family: 'Roboto';
@@ -130,7 +128,6 @@
         font-weight: 400;
         font-size: 13px;
         
-        /* or 13px */
         display: flex;
         align-items: center;
         
@@ -146,8 +143,11 @@
     font-size: 14px;
     color: #1F1F1F;
     text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
 .pAlredyAccount>a{
     color: #F97316;
+    display: inline-block;
 }

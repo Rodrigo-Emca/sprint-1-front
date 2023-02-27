@@ -7,8 +7,8 @@ import LogoMain from '../LogoMain/LogoMain'
 export default function NavBar() {
   return (
     <div className="navbar-box">
-      <MenuButton></MenuButton>
-      <LogoMain></LogoMain>
+      <MenuButton/>
+      <LogoMain/>
     </div>
   )
 }
