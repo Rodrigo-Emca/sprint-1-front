@@ -5,12 +5,12 @@
     padding: 24px;
     gap: 2rem;
 
-    position: absolute;
-    width: 400px;
-    height: 90vh;
-    left: 4rem;
-    top: 0px;
-
+    position: relative;
+    width: 50vw;
+    height: 80vh;
+    left: 0rem;
+    top: 4rem;
+    z-index: 100;
     background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
     border-radius: 10px;
 }
@@ -70,9 +70,9 @@ a {
     
         position: relative;
         width: 85vw;
-        height: 90vh;
+        height: 85vh;
         left: 0rem;
-        top: 0px;
+        top: 4rem;
     
         background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
         border-radius: 10px;
