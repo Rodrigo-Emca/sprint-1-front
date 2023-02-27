@@ -1,14 +1,12 @@
 import React from 'react'
 import './menuButton.css'
 
-import image from '../../images/Vector.png'
+import menuImagen from '../../images/Menu.svg'
 
 export default function MenuButton() {
   return (
     <button className='menuButton'>
-        <img src={image} />
-        <img src={image} />
-        <img src={image} />
+        <img src={menuImagen} alt="menú" />
     </button>
   )
 }
