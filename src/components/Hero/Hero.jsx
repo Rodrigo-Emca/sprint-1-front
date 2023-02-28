@@ -8,7 +8,6 @@ export default function Hero() {
   return (
     <div>
       <div className="heroContainer">
-        <NavBar/>
         <Bienvenida></Bienvenida>
       </div>
     <BannerSeparador></BannerSeparador>

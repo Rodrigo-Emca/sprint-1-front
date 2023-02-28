@@ -1,6 +1,7 @@
 .navbar-box{
     position: absolute;
-    width: 85VW;
+    width: 100%;
+    padding: 0 5rem;
     height: 55px;
     top: 32px;
     display: flex;

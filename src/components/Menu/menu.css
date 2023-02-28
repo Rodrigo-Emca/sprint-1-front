@@ -5,14 +5,22 @@
     padding: 24px;
     gap: 2rem;
 
-    position: relative;
-    width: 50vw;
-    height: 80vh;
+    position: absolute;
+    width: 425px;
+    height: 95.5vh;
     left: 0rem;
-    top: 4rem;
+    top: -2rem;
     z-index: 100;
     background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
     border-radius: 10px;
+
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {left:-425px;}
+    25%  {left: 0px;}
 }
 
 .EncabezadoMenu{
@@ -65,14 +73,14 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 24px;
+        padding: 30px;
         gap: 2rem;
     
-        position: relative;
-        width: 85vw;
-        height: 85vh;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
         left: 0rem;
-        top: 4rem;
+        top: -2rem;
     
         background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
         border-radius: 10px;
