@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './menuButton.css'
-
-import image from '../../images/Vector.png'
+import Menu from '../Menu/Menu'
 
 export default function MenuButton() {
+
+  const [show, setShow] = useState(false)
+
   return (
-    <button className='menuButton'>
-        <img src={image} />
-        <img src={image} />
-        <img src={image} />
+    <button className='menuButton' onClick={(handleShow) => setShow(!show)}>
+        {(show) ? (<Menu/>) : (null)}
     </button>
   )
 }

@@ -14,6 +14,7 @@
 }
 
 .innerFormulario>legend {
+    margin-left: 1rem;
     color: #F97316;
     font-family: 'Poppins';
     font-style: normal;
@@ -22,6 +23,7 @@
 }
 
 .inputs{
+    outline: none;
     width: 90%;
     height: 20px;
     border-radius: 15px;

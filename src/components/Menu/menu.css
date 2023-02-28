@@ -1,0 +1,88 @@
+.MenuNavbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 2rem;
+
+    position: absolute;
+    width: 425px;
+    height: 95.5vh;
+    left: 0rem;
+    top: -2rem;
+    z-index: 100;
+    background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
+    border-radius: 10px;
+
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {left:-425px;}
+    25%  {left: 0px;}
+}
+
+.EncabezadoMenu{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.EncabezadoMenu>p{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.subEncabezado{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subEncabezado>div>p{
+    color: white;
+    text-align: start;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a {
+    color: #FF5722;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    height: 48px;
+}
+
+@media (max-width:767px ) {
+    .MenuNavbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 2rem;
+    
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0rem;
+        top: -2rem;
+    
+        background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
+        border-radius: 10px;
+    }
+}
