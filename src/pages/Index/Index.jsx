@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 import Hero from '../Hero/Hero'
-import Register from '../Register/Register'
+import Register from '../../components/Register/Register'
 
 export default function Index() {
     return (
