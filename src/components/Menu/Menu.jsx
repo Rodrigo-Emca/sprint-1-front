@@ -2,6 +2,7 @@ import React from 'react'
 import './menu.css'
 
 import profilePic from '../../images/profilePic.png'
+import {Link as Anchor, Link} from 'react-router-dom'
 
 export default function Menu() {
     return (
@@ -17,8 +18,8 @@ export default function Menu() {
                 <p>X</p>
             </div>
             <a href="#">Read</a>
-            <a href="#">Register</a>
-            <a href="#">Login</a>
+            <Link to='/signup'>Register</Link>
+            <Link to='/signin'>Login</Link>
         </div>
     )
 }

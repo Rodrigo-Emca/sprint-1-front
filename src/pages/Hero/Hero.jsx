@@ -1,8 +1,8 @@
 import React from "react"
 import './hero.css'
-import NavBar from "../NavBar/NavBar"
-import Bienvenida from "../CuadroBienvenidaMain/Bienvenida"
-import BannerSeparador from "../BannerSeparador/BannerSeparador"
+import NavBar from "../../components/NavBar/NavBar"
+import Bienvenida from "../../components/CuadroBienvenidaMain/Bienvenida"
+import BannerSeparador from "../../components/BannerSeparador/BannerSeparador"
 
 export default function Hero() {
   return (
