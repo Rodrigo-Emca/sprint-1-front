@@ -22,11 +22,13 @@ async function handleSubmit(event) {
             [password.current.name]: password.current.value
         }
         console.log(data)
-        let url = 'http://localhost:8080/users/'
+        let url = 'http://localhost:8000/auth/signup'
         try {
             await axios.post(url, data)
         } catch(error) {
-            console.log(error)
+            // console.log(error)
+            let err = error.response.data.message
+            alert(err)
             console.log('Ocurrió un error')
         }
     }
