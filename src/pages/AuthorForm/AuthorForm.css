@@ -1,17 +1,31 @@
+*{
+font-family: Poppins, sans-serif;
+}
+
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 100vh;
 }
+
+
+#name{
+    margin-bottom: 4vh;
+}
+.image{
+    width: 77px;
+    height: 77px;
+    margin-top: 10px;
+}
 .form-container{
-    border: 2px solid red;
-    height: 75vh;
+    height: 70vh;
     width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5vh;
 }
 form{
     display: flex;
@@ -19,25 +33,52 @@ form{
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    border: 2px solid blue;
-    width: 15vw;
+    width: 18vw;
 }
 .author-input {
-    margin-bottom: 10px;
     font-size: 16px;
     padding: 8px;
+    margin-left: 10px;
+
   }
   
+  #author-name {
+    margin-bottom: -10px;
+  }
   .author-submit-button {
-    background-color: #4CAF50;
+    background-color: rgba(249, 115, 22, 1);
+    border-radius: 50000px;
     border: none;
     color: white;
+    width: 15vw;
     padding: 12px 30px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
   }
+  input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    width: 20vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    .form-container {
+      width: 100vw;
+    }
+    form {
+      width: 50vw;
+    }
+    input {
+      width: 50vw;
+    }
+    .author-submit-button {
+      width: 40vw;
+    }
+  }
+    
+  
   
