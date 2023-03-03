@@ -30,12 +30,11 @@ async function handleSubmit(event) {
             })
         } catch(error) {
             let err = error.response.data.message
-            alert(err)
             console.log('Ocurrió un error')
             Swal.fire({
                 icon: 'error',
                 title: '¡Lo sentimos!',
-                text: 'Hubo un problema.'
+                text: err
             })
         }
     }
