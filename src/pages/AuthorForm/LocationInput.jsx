@@ -10,8 +10,9 @@ const LocationInput = ({ city, setCity, country, setCountry }) => {
 
   return (
     <div className="form-group">
-      <label htmlFor="location">Ubicación:</label>
-      <input type="text" className="form-control" id="location" value={`${city}, ${country}`} onChange={handleLocationChange} />
+      <label htmlFor="location"></label>
+      <input type="text" className="form-control" id="location" placeholder="City, Country" value={`${city}, ${country}`} onChange={handleLocationChange} />
+
     </div>
   );
 };

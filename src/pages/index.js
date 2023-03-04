@@ -4,7 +4,7 @@ import AuthorForm from "./AuthorForm/AuthorForm";
 import Index from "./Index/Index";
 
 export const router = createBrowserRouter([
-  { path: "/index", element: <Index /> },
+  { path: "/", element: <Index /> },
   { path: "/author-form", element: <AuthorForm /> },
 ]);
 
