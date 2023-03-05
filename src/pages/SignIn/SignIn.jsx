@@ -2,7 +2,6 @@ import React from 'react'
 import './signin.css'
 import FormularioEncabezado from '../../components/FormularioEncabezado/FormularioEncabezado';
 import FormularioSignIn from '../../components/FormularioSignIn/FormularioSignIn';
-import FormularioBase from '../../components/FormularioBase/FormularioBase';
 
 import imagenSignIn from '../../images/SignIn.png'
 import {Link as Anchor} from 'react-router-dom'
@@ -24,7 +23,7 @@ export default function SignIn() {
                         </p>
                     </div>
                     <div className='FormularioBase'>
-                        <p className='pAlredyAccount'>Go back to <Anchor to='../index'>home page</Anchor></p>
+                        <p className='pAlredyAccount'>Go back to <Anchor to='../'>home page</Anchor></p>
                     </div>
                 </div>
             </div>

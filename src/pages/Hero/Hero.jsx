@@ -1,6 +1,5 @@
 import React from "react"
 import './hero.css'
-import NavBar from "../../components/NavBar/NavBar"
 import Bienvenida from "../../components/CuadroBienvenidaMain/Bienvenida"
 import BannerSeparador from "../../components/BannerSeparador/BannerSeparador"
 

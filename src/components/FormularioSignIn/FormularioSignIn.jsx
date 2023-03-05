@@ -28,6 +28,7 @@ async function handleSubmit(event) {
                 title: 'GENIAL',
                 text: '¡Usuario online!'
             })
+
         } catch(error) {
             let err = error.response.data.message
             console.log('Ocurrió un error')
