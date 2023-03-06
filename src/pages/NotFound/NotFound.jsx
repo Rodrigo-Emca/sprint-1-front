@@ -1,7 +1,6 @@
 import React from 'react'
 import './notfound.css'
 import {Link as Anchor} from 'react-router-dom'
-import Hero from '../Hero/Hero'
 
 export default function NotFound() {
     return (
