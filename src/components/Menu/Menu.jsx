@@ -2,8 +2,23 @@ import React from 'react'
 import './menu.css'
 
 import profilePic from '../../images/profilePic.png'
+import {Link as Anchor} from 'react-router-dom'
 
 export default function Menu() {
+
+    // const crearEvento = async () => {
+        
+    //     let url = `http://localhost:8080/auth/signin`
+    //     let token = localStorage.getItem('token')
+    //     let headers = {headers:{'Authorization':`Bearer ${token}`}}
+    //     let data = { ... }
+    //     try {
+    //     await axios.post(url,data,headers)
+    //     } catch (error) {
+    //     console.log(error)
+    //     }
+    //     }
+
     return (
         <div className='MenuNavbar'>
             <div className='EncabezadoMenu'>
@@ -17,8 +32,8 @@ export default function Menu() {
                 <p>X</p>
             </div>
             <a href="#">Read</a>
-            <a href="#">Register</a>
-            <a href="#">Login</a>
+            <Anchor to='/signup'>Register</Anchor>
+            <Anchor to='/signin'>Login</Anchor>
         </div>
     )
 }
