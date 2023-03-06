@@ -12,39 +12,44 @@ export default function FormularioSignIn() {
     let email = useRef()
     let password = useRef()
 
-async function handleSubmit(event) {
-        event.preventDefault()
+    async function handleSubmit(event) {
+            event.preventDefault()
 
-        let data = {
-            [email.current.name]: email.current.value,
-            [password.current.name]: password.current.value
-        }
-        console.log(data)
-        let url_signIn = 'http://localhost:8000/auth/signin'
-        try {
-            await axios.post(url_signIn, data)
+            let data = {
+                [email.current.name]: email.current.value,
+                [password.current.name]: password.current.value
+            }
+            console.log(data)
+            let url_signIn = 'http://localhost:8000/auth/signin'
+            try {
+                await axios.post(url_signIn, data)
 
-            .then(res => {
-                console.log(res)
-                localStorage.setItem('token', JSON.stringify(res.data.token))
+                .then(res => {
+                    console.log(res)
+                    localStorage.setItem('token', res.data.token)
+                    localStorage.setItem('user', JSON.stringify({
+                        name: res.data.name,
+                        email: res.data.email,
+                        photo: res.data.photo
+                    }))
+                    })
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'GENIAL',
+                    text: '¡Usuario online!'
                 })
 
-            Swal.fire({
-                icon: 'success',
-                title: 'GENIAL',
-                text: '¡Usuario online!'
-            })
-
-        } catch(error) {
-            let err = error.response.data.message
-            console.log('Ocurrió un error')
-            Swal.fire({
-                icon: 'error',
-                title: '¡Lo sentimos!',
-                text: err
-            })
+            } catch(error) {
+                let err = error.response.data.message
+                console.log('Ocurrió un error')
+                Swal.fire({
+                    icon: 'error',
+                    title: '¡Lo sentimos!',
+                    text: err
+                })
+            }
         }
-    }
 
     return (
     <form className='FormularioRegistro' onSubmit={handleSubmit}>
