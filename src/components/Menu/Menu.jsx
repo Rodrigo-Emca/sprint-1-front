@@ -5,6 +5,20 @@ import profilePic from '../../images/profilePic.png'
 import {Link as Anchor} from 'react-router-dom'
 
 export default function Menu() {
+
+    // const crearEvento = async () => {
+        
+    //     let url = `http://localhost:8080/auth/signin`
+    //     let token = localStorage.getItem('token')
+    //     let headers = {headers:{'Authorization':`Bearer ${token}`}}
+    //     let data = { ... }
+    //     try {
+    //     await axios.post(url,data,headers)
+    //     } catch (error) {
+    //     console.log(error)
+    //     }
+    //     }
+
     return (
         <div className='MenuNavbar'>
             <div className='EncabezadoMenu'>

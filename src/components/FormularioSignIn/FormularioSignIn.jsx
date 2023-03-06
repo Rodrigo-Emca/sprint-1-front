@@ -20,9 +20,15 @@ async function handleSubmit(event) {
             [password.current.name]: password.current.value
         }
         console.log(data)
-        let url = 'http://localhost:8000/auth/signin'
+        let url_signIn = 'http://localhost:8000/auth/signin'
         try {
-            await axios.post(url, data)
+            await axios.post(url_signIn, data)
+
+            .then(res => {
+                console.log(res)
+                localStorage.setItem('token', JSON.stringify(res.data.token))
+                })
+
             Swal.fire({
                 icon: 'success',
                 title: 'GENIAL',
