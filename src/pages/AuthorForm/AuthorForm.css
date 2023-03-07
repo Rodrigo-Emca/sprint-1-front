@@ -40,11 +40,14 @@ form{
     font-size: 16px;
     padding: 8px;
     margin-bottom: 15px;
-
+height: 35px;
+margin-right: 3px;
+font-size: 14px;
   }
   
   #author-name {
     margin-top: 20px;
+
   }
   .author-submit-button {
     background-color: rgba(249, 115, 22, 1);
