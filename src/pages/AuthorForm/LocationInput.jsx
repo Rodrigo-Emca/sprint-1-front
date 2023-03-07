@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { forwardRef } from "react";
 
-const LocationInput = ({ city, setCity, country, setCountry }) => {
-  const handleLocationChange = e => {
-    const value = e.target.value;
-    const [newCity, newCountry] = value.split(',');
-    setCity(newCity.trim());
-    setCountry(newCountry.trim());
-  }
+const AuthorCityCountryInput = forwardRef(({ onInputChange }, ref) => {
+  const handleInputBlur = () => {
+    const value = ref.current.value;
+    const [city, country] = value.split(",");
+    onInputChange(city.trim(), country.trim());
+  };
 
   return (
-    <div className="form-group">
-      <label htmlFor="location"></label>
-      <input type="text" className="form-control" id="location" placeholder="City, Country" value={`${city}, ${country}`} onChange={handleLocationChange} />
-
-    </div>
+    <input
+      type="text"
+      placeholder="City, Country"
+      ref={ref}
+      onBlur={handleInputBlur}
+    />
   );
-};
+});
 
-export default LocationInput;
+export default AuthorCityCountryInput;
+
+
+
+
+
+

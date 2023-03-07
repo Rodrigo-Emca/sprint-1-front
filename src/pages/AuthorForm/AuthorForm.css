@@ -19,7 +19,7 @@ font-family: Poppins, sans-serif;
     margin-top: 10px;
 }
 .form-container{
-    height: 70vh;
+    height: 80vh;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -34,16 +34,17 @@ form{
     align-items: center;
     height: 100%;
     width: 18vw;
+    margin-top: 2vh;
 }
 .author-input {
     font-size: 16px;
     padding: 8px;
-    margin-left: 10px;
+    margin-bottom: 15px;
 
   }
   
   #author-name {
-    margin-bottom: -10px;
+    margin-top: 20px;
   }
   .author-submit-button {
     background-color: rgba(249, 115, 22, 1);
@@ -57,6 +58,12 @@ form{
     margin-top: 20px;
     cursor: pointer;
   }
+
+  .author-birthdate {
+    margin-top: 10px;
+  }
+
+
   input {
     border: none;
     border-bottom: 1px solid #ccc;

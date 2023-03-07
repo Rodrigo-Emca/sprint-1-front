@@ -1,15 +1,14 @@
-import React from 'react';
-import './AuthorForm.css';
+import React from "react";
 
-const NameInput = ({ name, setName, lastName, setLastName }) => {
+function AuthorNameInput({ nameRef, lastNameRef, className, Id }) {
   return (
-    <div className="form-group">
-      <label htmlFor="name"></label>
-      <input type="text" className="form-control" id="name" placeholder='Name' value={name} onChange={e => setName(e.target.value)} />
-      <label htmlFor="lastName"></label>
-      <input type="text" className="form-control" id="lastName" placeholder='Last name' value={lastName} onChange={e => setLastName(e.target.value)} />
+    <div>
+      <label htmlFor={Id}></label>
+      <input type="text" ref={nameRef} placeholder="Name" name="name" className={className} />
+      <label htmlFor={Id}></label>
+      <input type="text" ref={lastNameRef} placeholder="Last name" name="lastName" className={className} />
     </div>
   );
-};
+}
 
-export default NameInput;
+export default AuthorNameInput;
