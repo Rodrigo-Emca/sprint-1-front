@@ -1,8 +1,6 @@
 import React from 'react'
 import './menu.css'
-// import axios from 'axios'
 
-// import { useEffect } from 'react'
 import {Link as Anchor} from 'react-router-dom'
 import LogoutAnchor from '../LogoutAnchor/LogoutAnchor'
 import closeImage from '../../images/Close_btn.png'
@@ -24,25 +22,6 @@ export default function Menu() {
         let name = user.name
         let email = user.email
         let photo = user.photo
-
-        // useEffect(() => {
-        //         let url = 'http://localhost:8080/auth/signin'
-        //         if (token) {
-        //             let headers = {headers:{'Authorization':'Bearer ${token}'}}
-        //             axios.post(url,null,headers)
-        //         }
-        //     })
-            // const crearEvento = async () => {   
-            //     let url = `http://localhost:8080/auth/signin`
-            //     let token = localStorage.getItem('token')
-            //     let headers = {headers:{'Authorization':`Bearer ${token}`}}
-            //     let data = {}
-            //     try {
-            //     await axios.post(url,data,headers)
-            //     } catch (error) {
-            //     console.log(error)
-            //     }
-            //     }
 
     return (
         <div>
