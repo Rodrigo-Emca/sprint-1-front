@@ -3,7 +3,7 @@ import './Select.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-export default function Select() {
+export default function Select(props) {
 
     let url = "http://localhost:8080/mangas"
 
@@ -21,13 +21,13 @@ export default function Select() {
     console.log(categories)
 
   return (
-    <select className="select-manga"name="insert-categories" id="insert-categories">
+    <select className="select-manga"name={props.name} ref={props.parentRef} id="insert-categories">
         <option className='option'>Insert Category</option>
         {
-            categories.map((e,i) => <option key={e} value={i}>{e}</option> )
+            categories.map((e) => <option key={e} value={e}>{e}</option> )
         }
     </select>
     
   )
 }
-
+ 

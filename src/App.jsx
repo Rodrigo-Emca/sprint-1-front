@@ -1,16 +1,21 @@
 import './App.css';
-import Index from './components/Index/Index';
+import Index from './pages/Index/Index';
 import IndexLayout from './layouts/IndexLayout/IndexLayout';
 
+import {router} from './pages/index'
+import { RouterProvider } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <IndexLayout>
+      {/* <IndexLayout>
         <Index/>
-      </IndexLayout>
+      </IndexLayout> */}
+
+      <RouterProvider router={router} />
+
     </div>
-  )
+  );
 }
 
 export default App;

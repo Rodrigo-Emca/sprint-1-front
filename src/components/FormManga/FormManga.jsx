@@ -2,31 +2,40 @@ import { useRef } from 'react'
 import './formManga.css'
 import Select from '../Select/Select'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
-export default function FormularioRegistro() {
-
+export default function FormManga() {
     let title = useRef()
-    let cover_photo = useRef()
     let description = useRef()
-    let category_id = useRef()
+    let category = useRef()
 
     async function handleSubmit(event) {
         event.preventDefault()
+        console.log(category)
 
         let data = {
 
             [title.current.name]: title.current.value,
-            [cover_photo.current.name]: cover_photo.current.value,
             [description.current.name]: description.current.value,
-            [category_id.current.name]: category_id.current.value
+            [category.current.name]: category.current.value
         }
         console.log(data)
         let url = 'http://localhost:8080/mangas/'
         try {
             await axios.post(url, data)
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Ok!',
+                text: 'creaste un nuevo MANGA!'
+            })
+
         } catch (error) {
             console.log(error)
-            console.log('Ocurrió un error')
+            Swal.fire({
+                icon: 'error',
+                title: 'no se puedo crear el manga',
+            })
         }
     }
 
@@ -34,12 +43,11 @@ export default function FormularioRegistro() {
         <form className='FormularioRegistro-m' onSubmit={handleSubmit}>
             <h2 className='title-manga'>New Manga</h2>
             <input ref={title} type="text" className='inputs-m' name='title' placeholder='Insert title' required />
-            <Select />
-            <input ref={cover_photo} type="text" className='inputs-m' name='cover_photo' placeholder='Insert photo' required />
+            <Select parentRef={category} name="category" />
             <input ref={description} type="text" className='inputs-m' name='description' placeholder='Insert description' required />
-            <input ref={category_id} type="text" className='inputs-m' name='category_id' placeholder='category id' value='64056b2e23fd4842685364f2' required />
             <input type="submit" value="Send" className='SignUpButton-m' />
 
         </form>
-    ) 
+    )
 }
+

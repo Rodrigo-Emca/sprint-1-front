@@ -77,6 +77,7 @@ export default function Menu() {
                         <Anchor to='/'>Read</Anchor>
                         <Anchor to='/signup'>Register</Anchor>
                         <Anchor to='/signin'>Login</Anchor>
+                        <Anchor to='/mangas'>Mangas</Anchor>
                     </div>
                 </div>
                 </div>

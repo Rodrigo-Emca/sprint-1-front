@@ -9,7 +9,8 @@
     flex-direction: column;
     padding: 0.5rem;
     gap: 10px;
-    width: 70%;
+    width: 50%;
+    padding-top: 10rem;
     margin: auto;
 }
 
@@ -38,4 +39,8 @@
   
 }
 
+.inputs-m2{
+    display: none;
+}
 
+ 
