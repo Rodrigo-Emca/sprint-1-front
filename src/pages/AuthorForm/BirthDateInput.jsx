@@ -1,12 +1,20 @@
-import React from 'react';
+import React from "react";
 
-const BirthdateInput = ({ birthdate, setBirthdate }) => {
+const BirthDateInput = React.forwardRef((props, ref) => {
   return (
-    <div className="form-group">
+    <div>
       <label htmlFor="birthdate"></label>
-      <input type="date" className="form-control" id="birthdate" value={birthdate} onChange={e => setBirthdate(e.target.value)} />
+      <input
+  type="date"
+  name="birthdate"
+  id="birthdate"
+  required
+  ref={ref}
+  {...props}
+/>
+
     </div>
   );
-};
+});
 
-export default BirthdateInput;
+export default BirthDateInput;
