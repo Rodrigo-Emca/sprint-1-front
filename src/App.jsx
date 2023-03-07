@@ -1,15 +1,12 @@
 import './App.css';
-import FormChapter from './components/FormChapter/FormChapter';
-import Index from './components/Index/Index';
-import IndexLayout from './layouts/IndexLayout/IndexLayout';
+
+import {router} from './pages/index'
+import { RouterProvider } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <IndexLayout>
-        <Index/>
-        <FormChapter/>
-      </IndexLayout>
+      <RouterProvider router={router} />
     </div>
   );
 }
