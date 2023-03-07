@@ -22,7 +22,7 @@ export default function FormChapter() {
             chapter[order.current.name] = order.current.value
         }
         console.log(chapter)
-        let url = 'http://localhost:8080/chapters'
+        let url = 'http://localhost:8000/chapters'
         let token = localStorage.getItem('token')
         let headers = {headers: {'Authorization': `Bearer ${token}`}}
         try{
