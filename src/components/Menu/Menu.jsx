@@ -19,6 +19,7 @@ export default function Menu() {
             <a href="#">Read</a>
             <a href="#">Register</a>
             <a href="#">Login</a>
+            <a href="http://localhost:3000/author-form">Create new author</a>
         </div>
     )
 }
