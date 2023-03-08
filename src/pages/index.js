@@ -5,7 +5,7 @@ import Register from "./Register/Register";
 import SignIn from "./SignIn/SignIn";
 import NotFound from "./NotFound/NotFound";
 import FormMangaPage from "./FormMangaPage/FormMangaPage"
-import FormChapter from '../pages/FormChapter/FormChapter'
+import ChapterForm from "./FormChapter/FormChapter";
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
