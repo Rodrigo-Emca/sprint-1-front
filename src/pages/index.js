@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
         {path: "/signup", element: <Register/>},
         {path: "/signin", element: <SignIn/>},
         {path: "/mangas", element: <FormMangaPage/>},
-        {path: "/chapters", element: <FormChapter/>},
+        {path: "/chapter-form/:manga_id", element: <ChapterForm />},
         {path: "/*", element: <NotFound/>}
     ]
 },
