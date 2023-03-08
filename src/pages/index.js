@@ -4,9 +4,9 @@ import Index from "./Index/Index";
 import Register from "./Register/Register";
 import SignIn from "./SignIn/SignIn";
 import NotFound from "./NotFound/NotFound";
-
+import FormMangaPage from "./FormMangaPage/FormMangaPage"
+import FormChapter from '../pages/FormChapter/FormChapter'
 import { createBrowserRouter } from "react-router-dom";
-import ChapterForm from "./FormChapter/FormChapter";
 
 export const router = createBrowserRouter([
     {path: "/", 
@@ -21,8 +21,9 @@ export const router = createBrowserRouter([
     children: [
         {path: "/signup", element: <Register/>},
         {path: "/signin", element: <SignIn/>},
-        {path: "/*", element: <NotFound/>},
-        {path: "/chapter-form/:manga_id", element: <ChapterForm />},
+        {path: "/mangas", element: <FormMangaPage/>},
+        {path: "/chapters", element: <FormChapter/>},
+        {path: "/*", element: <NotFound/>}
     ]
 },
 ])
