@@ -27,49 +27,24 @@ export default function Manga() {
     let descriptionManga = MANGA ? MANGA.decription : "";
     let imageManga = MANGA ? MANGA.cover_photo : "";
 
-    //Para mostrar los detalles cada vez que se aprete el boton MANGA.
-    // const handleMostrarDetallesClick = () => {
-    //     axios
-    //     .get(URLpeticionManga + id)
-    //     .then((response) => {
-    //         setManga(response.data.mangas);
-    //     })
-    //     .catch((error) => {
-    //         console.log(error);
-    //     });
-    // };
-
-
-
-    //Para mostrar los capitulos cada vez que se aprete el boton CHAPTERS.
-
     const URLpeticionChapters = "http://localhost:8000/chapters/chapters?manga_id=";
     const [CHAPTERS, setChapters] = useState(null);
     const [mostrarChapters, setMostrarChapters] = useState(false);
-
-    // useEffect(() => {
-    //     axios
-    //     .get(URLpeticionChapters + id)
-    //     .then((response) => {
-    //         setChapters(response.data.chapters);
-    //     })
-    //     .catch((error) => {
-    //         console.log(error);
-    //     });
-    // }, []);
-
-    // const handleMostrarChaptersClick = () => {
-    //     axios
-    //     .get(URLpeticionChapters + id)
-    //     .then((response) => {
-    //         setChapters(response.data.chapters);
-    //         setMostrarChapters(false);
-    //     })
-    //     .catch((error) => {
-    //         console.log(error);
-    //     });
-    // };
-
+    
+    //Para mostrar los detalles cada vez que se aprete el boton MANGA.
+    const handleMostrarDetallesClick = () => {
+        axios
+        .get(URLpeticionManga + id)
+        .then((response) => {
+            setManga(response.data.mangas);
+            setMostrarChapters(false);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    };
+    
+    //Para mostrar los capitulos cada vez que se aprete el boton CHAPTERS.
     const handleMostrarChaptersClick = () => {
         axios
         .get(URLpeticionChapters + id)
@@ -82,18 +57,6 @@ export default function Manga() {
         });
     };
     
-    const handleMostrarDetallesClick = () => {
-        axios
-        .get(URLpeticionManga + id)
-        .then((response) => {
-            setManga(response.data.mangas);
-            setMostrarChapters(false);
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-    };
-
     return (
         <div className="contenedorGeneral">
             <div className="primerContenedor">
@@ -139,31 +102,7 @@ export default function Manga() {
                         ))}
                     </div>
                 </div>
-    )}
+            )}
     </div>
     )
 }
-
-{/* 
-            <div className="contenedorDescription">
-                <div>
-                    <p>{descriptionManga}</p>
-                </div>
-            </div>
-            <div className="contenedorChapters">
-                <div>
-                    {CHAPTERS && CHAPTERS.map((chapter, index) => (
-                        <div key={index} className="innerContenedorChapter">
-                            <img src={imageManga} alt={chapter.title}  className="chapterImage"/>
-                            <div>
-                                <p>Title: {chapter.title}</p>
-                                <p>Order: {chapter.order}</p>
-                            </div>
-                            <Anchor to={"/chapter/"+id} className='btn-read'>Read</Anchor>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
-} */}
