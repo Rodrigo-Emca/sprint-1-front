@@ -1,11 +1,15 @@
 .contenedorGeneral{
     border: red 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /*configurar correctamente la altura */
-    min-height: 110vh;
+    min-height: 140vh;
 }
 
 .primerContenedor{
     border: blueviolet 2px solid;
+    width: 60%;
     height: 80%;
     
     position: relative;
@@ -22,17 +26,83 @@
 .statsReactions{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 50%;
+    height: 45%;
     align-items: center;
     justify-content: center;
 
     border: green 2px solid;
 }
 
-.segundoContenedor{
+.conenedorDeBotones{
+    border: yellow 2px solid;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+
+    position: relative;
+    top: 6rem;
+}
+
+.botones{
+    width: 195.63px;
+    height: 38px;
+    left: 20px;
+    top: 703px;
+
+    background: #F97316;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.contenedorDescription{
     border: palevioletred 2px solid;
+    width: 90%;
 
     position: relative;
     top: 6rem
+}
+
+.contenedorChapters{
+    border: red 2px solid;
+    width: 60%;
+
+    position: relative;
+    top: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerContenedorChapter{
+    display: flex;
+    border: blue 2px solid;
+    padding: 1rem;
+    width: 70vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chapterImage{
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+.btn-read{
+    color: white;
+    width: 151px;
+    height: 74px;
+    left: 238px;
+    top: 0px;
+
+    /* primary two design */
+    background: #F97316;
+    border-radius: 50000px;
 }
