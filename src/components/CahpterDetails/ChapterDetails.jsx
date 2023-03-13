@@ -5,6 +5,7 @@ import axios from 'axios'
 import './chapterDetails.css'
 import Arrowr from '../../images/Arrowr.svg'
 import Arrowl from '../../images/Arrowl.svg'
+import comentarios from '../../images/comentarios.svg'
 
 export default function ChapterDetails() {
     let navigate = useNavigate()
@@ -55,6 +56,9 @@ export default function ChapterDetails() {
             </div>
             <div className='div-page'>
                 <img src={Chapters?.pages?.[page]} alt="" />
+            </div>
+            <div className='div-comentario'>
+                <img src={comentarios} alt='icono-comentarios' />
             </div>
         </div>
     )

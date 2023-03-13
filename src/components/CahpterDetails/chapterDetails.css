@@ -1,60 +1,88 @@
-.div-chapter{
+.div-chapter {
     width: 100%;
     margin-top: 6rem;
     border-top: 1px solid #000;
 }
-.div-page{
+
+.div-page {
     width: 50%;
     margin: 0 auto;
 }
-.div-page>img{
+
+.div-page>img {
     width: 100%;
 }
-.chapter{
+
+.chapter {
     width: 100%;
     height: 52px;
     background: linear-gradient(162.88deg, #FF5722 -11.37%, #F97316 73.97%);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
 }
 
-.parrafo-chapter{
+.parrafo-chapter {
     width: 232px;
     color: #fff;
     margin: auto;
     padding-top: 1rem;
 }
 
-.btnArrow{
+.btnArrow {
     width: 10%;
     height: 30vh;
     cursor: pointer;
     position: absolute;
-    margin: 70vh 1rem ;
+    margin: 70vh 1rem;
 }
-.btnArrow>img{
+
+.btnArrow>img {
     margin: 6px 6px;
     width: 64px;
     height: 64px;
 }
 
-.btnNext{
+.btnNext {
     right: 0;
 }
 
-@media (min-width: 425px) and (max-width: 767px){
-    .div-page{
+.div-comentario {
+    margin-top: 2rem;
+    width: 100%;
+    height: 72px;
+}
+.div-comentario>img{
+    margin: 1.5rem auto;
+    padding-left: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .div-page {
         width: 90%;
         margin: 0 auto;
     }
-    .div-page>img{
+
+    .div-page>img {
         width: 100%;
     }
-    .btnArrow{
+
+    .btnArrow {
         margin: 40vh 0;
     }
-    .btnArrow>img{
+
+    .btnArrow>img {
         margin: 6px 0px;
         width: 32px;
         height: 32px;
+    }
+
+    .div-comentario {
+        margin-top: 2rem;
+        width: 100%;
+        height: 72px;
+    }
+    .div-comentario>img{
+        margin: 1.5rem;
+        padding-left: 10rem;
     }
 }
