@@ -1,5 +1,4 @@
 import { createReducer } from "@reduxjs/toolkit"
-
 import textActions from "./actions"
 
 const { capture } = textActions
@@ -14,9 +13,10 @@ let alertReducer = createReducer(
         .addCase(
             capture,
             (state,action) => {
+                //action.payload.text = action.payload.text.trim()
                 let newState = {
                     ...state,
-                    text: action.payload.text
+                    text: action.payload.text.trim()
                 }
                 return newState
             }

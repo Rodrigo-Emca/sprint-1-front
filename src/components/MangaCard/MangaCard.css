@@ -1,0 +1,119 @@
+
+.card-container{
+    width: 22rem;
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+}
+.span{
+    height: 9rem;
+    width: 0.3rem;
+    background: #F97316;
+}
+.inf-card{
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    padding-left: 1.5vh;
+    padding-top: 6vh;
+}
+.img-card{
+   width: 12rem;
+   height: 11rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 90px 10px 10px 90px;
+}
+
+.title-card{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 95.19%;
+    position:relative;
+    top:3.7rem;
+    right: 3rem;
+}
+.type-card{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F97316;
+}
+.btn-card{
+    width: 92px;
+    height: 35px;
+    margin-top: 1rem;
+    background: #D1FBF0;
+    padding: 1rem 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    border:none;
+    color: #00BA88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position:relative;
+    bottom: 1.5rem;
+    right: 2.5rem;  
+}
+
+@media (max-width:1023px){
+    .card{
+        width: 50rem;
+    }
+    .span{
+        width: 0.5rem;
+    }
+    .inf-card{
+        width: 25rem;
+    }
+    .img-card{
+       width: 25rem;
+    }
+}
+
+@media (max-width:767px){
+    .card{
+        width: 80rem;
+    }
+    .span{
+       width: 1rem;
+    }
+    .inf-card{
+        width: 30vw;
+    }
+    .img-card{
+        width: 30rem;
+    }
+}
+
+@media (max-width:424px){
+    .card{
+        height: 20rem;
+    }
+    .span{
+       width: 1rem;
+        height: 14rem;
+    }
+    .inf-card{
+        height: 20rem;
+        padding-top: 3rem;
+    }
+    .img-card{
+        height: 20rem;
+    }
+}
