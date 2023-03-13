@@ -1,0 +1,10 @@
+.navbar-box{
+    position: absolute;
+    width: 100%;
+    padding: 0 5rem;
+    height: 55px;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
